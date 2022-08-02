@@ -1,32 +1,33 @@
-body{
+body {
     font-family: 'DM Sans', sans-serif;
 }
 
-.container{
+.container {
     max-width: 1070px;
     margin: 0 auto;
     margin: 0 auto
 }
 
-.btn1{
+.btn1 {
     padding: 20px 30px;
     margin: 10px;
 }
-.header{
+
+.header {
     background: rgba(255, 113, 67, 0.27);
     padding: 38px 0 48px;
 }
 
-.nav_li{
+.nav_li {
     display: inline-block;
     margin-left: 49px;
 }
 
-.nav_li:not(:first-of-type){
+.nav_li:not(:first-of-type) {
     margin-left: 49px;
 }
 
-.nav_link{
+.nav_link {
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
@@ -35,12 +36,12 @@ body{
     text-decoration: none;
 }
 
-.nav_link:hover{
+.nav_link:hover {
     color: black;
     transition: 300ms;
 }
 
-.button{
+.button {
     width: 212.39px;
     height: 60px;
     font-weight: 700;
@@ -51,17 +52,19 @@ body{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+
 }
 
-.button_orange{
+.button_orange {
     background: #ff7143;
 }
-.button_orange:hover{
+
+.button_orange:hover {
     background: #f67c53;
     transition: 500mas;
 }
 
-.about_title{
+.about_title {
     font-weight: 700;
     font-size: 80px;
     line-height: 77px;
@@ -71,7 +74,7 @@ body{
     margin-bottom: 30px;
 }
 
-.about_text{
+.about_text {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -81,40 +84,159 @@ body{
     margin-bottom: 50px;
 }
 
-.button_violet{
+.button_violet {
     background-color: #5454d4;
 }
 
-.button_violet:hover{
+.button_violet:hover {
     background: #656464;
     transition: 500mas;
 }
-    
-.button_transparent{
+
+.button_transparent {
     background: none;
     color: #5454d4;
     border: 1px solid #5454d4;
     margin-left: 35px;
 }
 
-.button_transparent:hover{
+.button_transparent:hover {
     background: #d5d3d3;
     transition: 500mas;
     border: 1px solid #5454d4;
     margin-left: 35px;
 }
 
-.footer{
+.footer {
     background: rgba(255, 113, 67, 0.27);
     padding: 53px 0 48px;
 }
-    
-.header_flex, .footer_flex, .about{
+
+.header_flex,
+.footer_flex,
+.about,
+.plan__flex,
+.subscribe {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.about{
+.about {
     margin: 105px auto 85px;
+}
+
+.subscribe {
+    margin-bottom: 85px;
+}
+
+.subscribe_title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56316px;
+    color: #19191B;
+    margin-bottom: 38px;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 302px;
+    height: 60px;
+    border: 1px solid #7087FF;
+    border-radius: 10px;
+    margin-right: 39px;
+    padding-left: 14px;
+}
+
+
+.input::placeholder,
+input {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.531474px;
+    color: #000000;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.plan {
+    margin-bottom: 132px;
+}
+
+.plan__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+    max-width: 504px;
+    margin-bottom: 110px;
+}
+
+.item{
+    width: 330px;
+    background: #F8F8F8;
+    border-radius: 10px;
+    text-align: center;
+    padding: 34px 0 27px;
+}
+
+.item:hover{
+    transition: 500ms;
+    background: #FF7143;
+    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+}
+
+.item__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.562737px;
+    color: #696871;
+
+}
+
+
+.item:hover .item__text, .item:hover .item__title, .item:hover .item__li{
+    color: white;
+    transition: 500ms;
+}
+
+.item__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 56px;
+    letter-spacing: -1.03448px;
+    color: #1D293F;
+    margin: 22px 0 28px;
+}
+
+.item__title span{
+    font-size: 28px;
+}
+
+.item__li{
+    list-style: none;
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: -0.531474px;
+    color: #696871;
+}
+
+.button_item{
+    width: 285px;
+    background: white;
+    color: #5454d4;
+    margin-top: 36px;
+}
+
+.item:hover .button_item{
+    background: #9F3919;
+    color: #FFFFFF;
+    transition: 500ms;
 }
